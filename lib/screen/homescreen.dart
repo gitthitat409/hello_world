@@ -19,11 +19,20 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text("My First Project"),
         ),
         body: Center(
-          child: Container(
-            width: 200,
-            height: 150,
-            color: Colors.green,
-            child: Image.asset('assets/images/12.jpg'),
+          child: Column(
+            children: [
+              Container(
+                color: Colors.red,
+                child: Text("รูปแมว"),
+                ),
+              Text("เข้าใจมั้ย"),
+              Container(
+                width: 200,
+                height: 150,
+                color: Colors.green,
+                child: Image.asset('assets/images/12.jpg'),
+              ),
+            ],
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
