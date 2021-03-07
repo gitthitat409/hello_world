@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                 color: Colors.red,
                 child: Text("รูปแมว"),
-                ),
+              ),
               Text("เข้าใจมั้ย"),
               Container(
                 width: 200,
@@ -32,6 +32,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.green,
                 child: Image.asset('assets/images/12.jpg'),
               ),
+              DropdownButton(
+     hint: Text("ทายสิอะไรเอ๋ย?"),
+     items: [
+         DropdownMenuItem(
+             onTap: () {},
+             value: 1,
+             child: Text("แมว"),
+         ),
+         DropdownMenuItem(
+             onTap: () {},
+             value: 1,
+              child: Text("สุนัข"),
+         )
+     ],
+     onChanged: (int value) {},
+),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("กดปุ่มนี้ดู"),
+              )
             ],
           ),
         ),
