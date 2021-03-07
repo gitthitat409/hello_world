@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/screen/FormScreen/example.dart';
+import 'package:hello_world/screen/FormScreen/form_screen.dart';
+import 'package:hello_world/screen/list_view_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -33,24 +36,53 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Image.asset('assets/images/12.jpg'),
               ),
               DropdownButton(
-     hint: Text("ทายสิอะไรเอ๋ย?"),
-     items: [
-         DropdownMenuItem(
-             onTap: () {},
-             value: 1,
-             child: Text("แมว"),
-         ),
-         DropdownMenuItem(
-             onTap: () {},
-             value: 1,
-              child: Text("สุนัข"),
-         )
-     ],
-     onChanged: (int value) {},
-),
+                hint: Text("ทายสิอะไรเอ๋ย?"),
+                items: [
+                  DropdownMenuItem(
+                    onTap: () {},
+                    value: 1,
+                    child: Text("แมว"),
+                  ),
+                  DropdownMenuItem(
+                    onTap: () {},
+                    value: 1,
+                    child: Text("สุนัข"),
+                  )
+                ],
+                onChanged: (int value) {},
+              ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ListViewScreen(),
+                    ),
+                  );
+                },
                 child: Text("กดปุ่มนี้ดู"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FromScreen(),
+                    ),
+                  );
+                },
+                child: Text("fromscreen"),
+              ),
+               ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Example(),
+                    ),
+                  );
+                },
+                child: Text("Example"),
               )
             ],
           ),
