@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 200,
                 height: 150,
                 color: Colors.green,
-                child: Image.asset('assets/images/12.jpg'),
+                child: Image.asset('https://s.isanook.com/wo/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL3dvLzAvdWQvMjcvMTM1NTY5L2wxLmpwZw==.jpg'),
               ),
               DropdownButton(
                 hint: Text("ทายสิอะไรเอ๋ย?"),
